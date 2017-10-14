@@ -35,12 +35,16 @@ A step by step tutorial to set up a new project can be found [here](https://gith
 
 Library can be easily installed using NPM:
 
-`npm install --save react-native-charts-wrapper`
+`npm install --save @merryjs/react-native-charts`
+
+or
+
+`yarn add @merryjs/react-native-charts`
 
 Additional setup is required because library is using native code.
 
 
-### ANDROID  
+### ANDROID
 
 
 #### 1. Add Maven Repository
@@ -64,8 +68,8 @@ allprojects {
 
 *   **Mostly automatic install with react-native**
 
-		react-native link react-native-charts-wrapper
-		
+		react-native link react-native-charts
+
 *   **Manual install**
 
 
@@ -127,7 +131,7 @@ protected List<ReactPackage> getPackages() {
 		#import "React/RCTEventEmitter.h"
 
 
-You should make sure set this file in your target -> Build Settings -> Swift Compiler - General -> Object-C Bridging Header 
+You should make sure set this file in your target -> Build Settings -> Swift Compiler - General -> Object-C Bridging Header
 
 
 #### 3. Add Charts and SwiftyJSON
@@ -144,7 +148,7 @@ add a `Podfile` to your ios directory with the following content. Then run `pod 
     pod 'SwiftyJSON', '3.1.4'
     pod 'Charts', '3.0.1'
   end
-  
+
   post_install do |installer|
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
@@ -153,7 +157,7 @@ add a `Podfile` to your ios directory with the following content. Then run `pod 
     end
   end
   ```
-  
+
 *  **Manual install**
 
 1. Install [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) and [iOS Charts](https://github.com/danielgindi/ios-charts) libraries and add `SwiftyJSON.xcodeproj` and `Charts.xcodeproj` files to your project.
@@ -230,15 +234,15 @@ check Example->TimeSeriesLineChart for details
 
 ## Callback
 
-Support value selection callBack. 
+Support value selection callBack.
 
 you can do whatever you want, even pop your own modal, or jump to another page.
 
 
 
-## Custom Marker Content 
+## Custom Marker Content
 
-Support custom marker content. 
+Support custom marker content.
 
 check Example->TimeSeriesLineChart for details.
 
@@ -249,23 +253,23 @@ check Example->TimeSeriesLineChart for details.
 1. fontFamily & fontStyle
 
   The font is a little different in android & ios, I don't know how to configure it in js in the same way.
-  
+
 2. pie's entryLabelTextSize & entryLabelColor
 
   MpAndroidChart & Charts are dealing pie's entryLabel in a different way, currently the settings of pie's entryLabelTextSize & entryLabelColor can only work in android.
-  
+
 
 **size of chart**
 
 you can set chart to fixed width & height, or flex:1
-  
+
 ## Need for help
 
 I spent serveral days to learn swift and ios, but I am still quite new to it.
 
 It is not quite elegant to copy source files to your project, but I haven't figure out how to build it as a framework like others.
 
-Here is the [question](http://stackoverflow.com/questions/42570599/how-to-create-react-native-framework-using-swift) in stackoverflow. 
+Here is the [question](http://stackoverflow.com/questions/42570599/how-to-create-react-native-framework-using-swift) in stackoverflow.
 
 It is appreciated if you can answer the question or create a issue/PR.
 
