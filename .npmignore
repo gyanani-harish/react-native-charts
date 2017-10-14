@@ -1,7 +1,5 @@
 .*
 !/.gitignore
-!/.npmignore
-
 target
 build
 gradle.properties
@@ -13,4 +11,8 @@ Pods
 Podfile.lock
 Example.xcworkspace
 node_modules
-lib/*.d.ts
+Example
+screenshot
+tsconfig.json
+yarn-error.json
+src
