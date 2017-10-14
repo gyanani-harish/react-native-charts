@@ -1,21 +1,18 @@
 {
-  "name": "react-native-charts-wrapper",
+  "name": "react-native-charts",
+  "version": "1.0.0",
+  "description":
+    "This library is React Native wrapper of popular Native charting library [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) and [Charts](https://github.com/danielgindi/Charts)",
+  "main": "index.js",
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/wuxudong/react-native-charts-wrapper.git"
+    "url": "git+https://github.com/merryjs/react-native-charts.git"
   },
-  "version": "0.2.10",
-  "description": "A react-native charts support both android and ios.",
-  "author": "wuxudong",
+  "author": "wuxudong bang88",
   "license": "MIT",
-  "nativePackage": true,
-  "homepage": "https://github.com/wuxudong/react-native-charts-wrapper",
-  "keywords":  [
-    "react native",
-    "chart",
-    "android",
-    "MPAndroidChart",
-    "ios",
-    "Charts"
-  ]
+  "bugs": {
+    "url": "https://github.com/merryjs/react-native-charts/issues"
+  },
+  "homepage": "https://github.com/merryjs/react-native-charts#readme"
 }
