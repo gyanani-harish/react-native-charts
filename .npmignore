@@ -15,4 +15,4 @@ Example
 screenshot
 tsconfig.json
 yarn-error.json
-src
+/src

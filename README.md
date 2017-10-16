@@ -75,11 +75,9 @@ allprojects {
 
 **android/settings.gradle**
 ```
-include ':react-native-charts-wrapper'
-project(':react-native-charts-wrapper').projectDir = new File(
-  rootProject.projectDir,
-  '../node_modules/react-native-charts-wrapper/android'
-)
+include ':@merryjs/react-native-charts'
+project(':@merryjs/react-native-charts').projectDir = new File(rootProject.projectDir, '../node_modules/@merryjs/react-native-charts/android')
+
 ```
 
 **android/app/build.gradle**
@@ -87,7 +85,7 @@ project(':react-native-charts-wrapper').projectDir = new File(
 ```
 dependencies {
     ...
-    compile project(':react-native-charts-wrapper')
+	compile project(':@merryjs/react-native-charts')
 }
 ```
 
@@ -115,7 +113,7 @@ protected List<ReactPackage> getPackages() {
 
 #### 1. Add Source Files
 
- add directory node_modules/react-native-charts-wrapper/ReactNativeCharts under your project *top level*. (In Xcode: File -> Add files to "App Name")
+ add directory node_modules/@merryjs/react-native-charts/ios/ReactNativeCharts under your project *top level*. (In Xcode: File -> Add files to "App Name")
 
 #### 2. Add Bridge File
 
